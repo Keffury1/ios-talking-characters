@@ -14,13 +14,24 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var talkingLabel: UILabel!
     @IBOutlet weak var imageView2: UIImageView!
     
-    var character: String?
+    var character: Model.Animation?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let cells = Model.shared.cells(for: character!)
+        imageView2.animationImages = cells
+        imageView2.animationRepeatCount = 0
+        imageView2.animationDuration = 0.0
+            imageView2.startAnimating()
+    }
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let character = character else { return }
+        talkingLabel.text = character.rawValue
     }
     
    

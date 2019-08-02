@@ -34,7 +34,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imageView1" destination="f0f-ch-EWj" id="IH2-YO-n9L"/>
-                                    <segue destination="2X4-yt-uc4" kind="show" id="CkK-Hy-Tmw"/>
+                                    <segue destination="2X4-yt-uc4" kind="show" identifier="ShowDetailSegue" id="CkK-Hy-Tmw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,10 +57,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bD-oj-daN">
-                                <rect key="frame" x="80" y="161" width="254" height="68"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bD-oj-daN">
+                                <rect key="frame" x="20" y="161" width="374" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="wTc-bg-9Ss"/>
+                                    <constraint firstAttribute="height" constant="68" id="I7J-Wd-yx6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
@@ -72,13 +72,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Jy3-4b-G7k" firstAttribute="bottom" secondItem="fNe-1t-Kff" secondAttribute="bottom" id="2nA-hP-cAU"/>
-                            <constraint firstItem="1bD-oj-daN" firstAttribute="leading" secondItem="Jy3-4b-G7k" secondAttribute="leading" constant="80" id="5Dx-DL-IPb"/>
-                            <constraint firstItem="fNe-1t-Kff" firstAttribute="leading" secondItem="Jy3-4b-G7k" secondAttribute="leading" id="L3u-nb-1Gm"/>
-                            <constraint firstItem="fNe-1t-Kff" firstAttribute="top" secondItem="1bD-oj-daN" secondAttribute="bottom" constant="60" id="M7s-8Z-NAw"/>
-                            <constraint firstItem="1bD-oj-daN" firstAttribute="top" secondItem="Jy3-4b-G7k" secondAttribute="top" constant="73" id="ZOc-db-Tpq"/>
-                            <constraint firstItem="1bD-oj-daN" firstAttribute="centerX" secondItem="fNe-1t-Kff" secondAttribute="centerX" id="kcA-1h-WxT"/>
-                            <constraint firstItem="Jy3-4b-G7k" firstAttribute="trailing" secondItem="fNe-1t-Kff" secondAttribute="trailing" id="stk-3n-hOI"/>
+                            <constraint firstItem="fNe-1t-Kff" firstAttribute="bottom" secondItem="Jy3-4b-G7k" secondAttribute="bottom" id="8eI-8B-Ihr"/>
+                            <constraint firstItem="1bD-oj-daN" firstAttribute="leading" secondItem="jYN-FR-EUm" secondAttribute="leadingMargin" id="DtY-U8-Ep2"/>
+                            <constraint firstItem="fNe-1t-Kff" firstAttribute="top" secondItem="1bD-oj-daN" secondAttribute="bottom" constant="60" id="SWk-WL-Lat"/>
+                            <constraint firstAttribute="trailing" secondItem="fNe-1t-Kff" secondAttribute="trailing" id="ait-wM-0Qu"/>
+                            <constraint firstItem="1bD-oj-daN" firstAttribute="centerX" secondItem="fNe-1t-Kff" secondAttribute="centerX" id="hMt-sr-efr"/>
+                            <constraint firstItem="fNe-1t-Kff" firstAttribute="leading" secondItem="jYN-FR-EUm" secondAttribute="leading" id="tEP-6s-qrg"/>
+                            <constraint firstItem="1bD-oj-daN" firstAttribute="top" secondItem="Jy3-4b-G7k" secondAttribute="top" constant="73" id="vQH-zJ-DKw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jy3-4b-G7k"/>
                     </view>

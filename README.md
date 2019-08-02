@@ -56,7 +56,9 @@ Follow these IB setup steps:
 4. Select the table view and set the row height to 120
 5. Add an image view with Center content mode, sized 100x100. Do _not_ clip to bounds.
 6. Add a detail view controller and connect it from your prototype cell by adding a segue that performs "Show".
-7. Add a large label and an image view (with a centered content mode) to the detail view controller. Again, do not clip to bounds. Lay out the view to allow for the largest (vendor) animation. Otherwise you are free to design this screen as you like.
+7. Add a large label and an image view (with a centered content mode) to the detail view controller. Again, do not clip to bounds. 
+// what is this? Lay out the view to allow for the largest (vendor) animation. 
+Otherwise you are free to design this screen as you like.
 
 ## Connecting Outlets
 

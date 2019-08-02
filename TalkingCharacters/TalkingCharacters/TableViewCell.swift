@@ -12,15 +12,17 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageView1: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var character: Model.Animation? {
+        didSet {
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func updateViews() {
+        guard let character = character else { return }
+        
+        let image = Model.shared.image(for: character)
+        imageView1.image = image
     }
 
 }
