@@ -8,7 +8,9 @@
 
 import UIKit
 
+// Extension on the Int property.
 extension Int {
+    // Transfers the Int to a string.
     fileprivate func stringPadded(to count: Int) -> String {
         var string = String(self)
         while string.count < count { string = "0" + string }
@@ -17,10 +19,13 @@ extension Int {
 }
 
 class Model {
+    // Shared constant that allows other files to access the model itself without initializing.
     static let shared = Model()
     private init() {}
     
+    // Enum to story the animations that are of type String and CaseIterable.
     enum Animation: String, CaseIterable {
+        // For each case, set the new name.
         case bureaucrat = "Talking Bureaucrat"
         case frog = "Talking Frog"
         case ranger = "Talking Ranger"
@@ -28,9 +33,12 @@ class Model {
         case bot = "Talking Woodbot"
     }
     
+    // Setting the new cellCounts property to specific Int's for each character.
     private let cellCounts = [Animation.bureaucrat: 26, .frog: 62, .ranger: 86, .vendor: 36, .bot: 69]
     
+    // Characters variable of type Array of Animation.
     var characters: [Animation] {
+        // Returns all cases of the animation.
         return Animation.allCases
     }
     
